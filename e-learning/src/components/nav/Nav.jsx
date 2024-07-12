@@ -1,10 +1,10 @@
 import React from "react";
 import {FaBars, FaBook } from "react-icons/fa";
-
+import Dropdown from "./Dropdown";
 const Nav = () => {
   return (
     <div className="">
-      <header className="px-4 lg:p-[40px] h-14 flex justify-around w-screen items-center">
+      <header className="px-4 border-b border-black lg:p-[40px] h-14 flex justify-around w-screen items-center">
         <a href="#" className="flex gap-4 items-center justify-center">
           <FaBook className="text-2xl" />
           <span className="font-semibold text-2xl">Acme Education</span>
@@ -13,7 +13,11 @@ const Nav = () => {
           <button className="rounded-full sm:hidden">
             <FaBars className="h-5 w-5" />
           </button>
+        
           <nav className="hidden sm:flex gap-4 sm:gap-6 items-center">
+          <Dropdown value = "Class"/>
+          <Dropdown value = "Subject"/>
+
             <a
               href="#"
               className="text-xl font-medium hover:underline underline-offset-4"
