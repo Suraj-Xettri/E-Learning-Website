@@ -11,7 +11,6 @@ const CardContainer = () => {
       title: "Hello",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
-    ,
     {
       title: "Hello",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -29,11 +28,14 @@ const CardContainer = () => {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
   ];
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 justify-items-center">
-      {cards.map((card, index) => (
-        <Card key={index} title={card.title} description={card.description} />
-      ))}
+    <div className="flex justify-center items-center">
+      <div className="grid box-border grid-cols-1 sm:grid-cols-2 sm:pl-7 lg:grid-cols-3 gap-16">
+        {cards.map((card, index) => (
+          <Card key={index} title={card.title} description={card.description} />
+        ))}
+      </div>
     </div>
   );
 };
