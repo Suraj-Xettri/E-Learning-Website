@@ -1,115 +1,40 @@
 import React from "react";
+import { FaChevronDown, FaChevronRight, FaBars, FaBook } from "react-icons/fa";
 
 const Nav = () => {
   return (
-    <div>
-      <header className="px-4 lg:px-6 h-14 flex items-center">
+    <div className="">
+      <header className="px-4 lg:px-6 h-14 flex justify-between w-screen items-center">
         <a href="#" className="flex items-center justify-center">
-          <BookIcon className="size-6" />
+          <FaBook className="size-6" />
           <span className="sr-only">Acme Education</span>
         </a>
         <div className="ml-auto flex items-center gap-4 sm:gap-6">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button
-                className="rounded-full sm:hidden"
-              >
-                <MenuIcon className="h-5 w-5" />
-                <span className="sr-only">Toggle Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="sm:hidden">
-              <nav className="grid gap-6 text-lg font-medium">
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button
-                      variant="link"
-                      className="flex items-center justify-between"
-                    >
-                      Classes
-                      <ChevronDownIcon className="h-4 w-4" />
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-48">
-                    <DropdownMenuItem>
-                      <a href="#" className="flex items-center justify-between">
-                        Class 1
-                        <ChevronRightIcon className="h-4 w-4" />
-                      </a>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button
-                      variant="link"
-                      className="flex items-center justify-between"
-                    >
-                      Subjects
-                      <ChevronDownIcon className="h-4 w-4" />
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-48">
-                    <DropdownMenuItem>
-                      <a href="#" className="flex items-center justify-between">
-                        Mathematics
-                        <ChevronRightIcon className="h-4 w-4" />
-                      </a>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-                <a
-                  href="#"
-                  className="text-sm font-medium hover:underline underline-offset-4"
-                >
-                  About
+          <button className="rounded-full sm:hidden">
+            <FaBars className="h-5 w-5" />
+            <span className="sr-only">Toggle Menu</span>
+          </button>
+          <nav className="hidden sm:flex gap-4 sm:gap-6 items-center">
+            <div className="relative group">
+              <button className="flex items-center">
+                Classes <FaChevronDown className="h-4 w-4 ml-1" />
+              </button>
+              <div className="absolute hidden group-hover:block bg-white shadow-md mt-2 w-48">
+                <a href="#" className="flex items-center justify-between p-2">
+                  Class 1 <FaChevronRight className="h-4 w-4" />
                 </a>
-                <a
-                  href="#"
-                  className="text-sm font-medium hover:underline underline-offset-4"
-                >
-                  Blog
+              </div>
+            </div>
+            <div className="relative group">
+              <button className="flex items-center">
+                Subjects <FaChevronDown className="h-4 w-4 ml-1" />
+              </button>
+              <div className="absolute hidden group-hover:block bg-white shadow-md mt-2 w-48">
+                <a href="#" className="flex items-center justify-between p-2">
+                  Mathematics <FaChevronRight className="h-4 w-4" />
                 </a>
-                <a
-                  href="#"
-                  className="text-sm font-medium hover:underline underline-offset-4"
-                >
-                  Contact
-                </a>
-              </nav>
-            </SheetContent>
-          </Sheet>
-          <nav className="hidden sm:flex gap-4 sm:gap-6">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="link">
-                  Classes <ChevronDownIcon className="h-4 w-4 ml-1" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48">
-                <DropdownMenuItem>
-                  <a href="#" className="flex items-center justify-between">
-                    Class 1
-                    <ChevronRightIcon className="h-4 w-4" />
-                  </a>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="link">
-                  Subjects <ChevronDownIcon className="h-4 w-4 ml-1" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48">
-                <DropdownMenuItem>
-                  <a href="#" className="flex items-center justify-between">
-                    Mathematics
-                    <ChevronRightIcon className="h-4 w-4" />
-                  </a>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+              </div>
+            </div>
             <a
               href="#"
               className="text-sm font-medium hover:underline underline-offset-4"

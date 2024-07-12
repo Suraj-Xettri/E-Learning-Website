@@ -1,9 +1,9 @@
-function App() {
-  
+import Nav from "./components/nav/Nav"
 
+function App() {
   return (
     <>
-      <div className='bg-red-500 text-white-500'>hello</div>
+      <Nav/>
     </>
   )
 }
