@@ -2,13 +2,6 @@ import React from "react";
 
 import Second from "./Second";
 
-const courses = [
-  // Add your course objects here
-  { id: 1, title: "Course 1", description: "Description for course 1" },
-  { id: 2, title: "Course 2", description: "Description for course 2" },
-  // Add more courses as needed
-];
-
 const Home = () => {
   return (
     <main className="w-screen box-border relative z-10 flex flex-col justify-center items-center">
@@ -27,7 +20,7 @@ const Home = () => {
                 <a
                   href="#"
                   className="inline-flex h-9 items-center justify-center rounded-md bg-[#D5B990] px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-orange-200"
-                  prefetch={false}
+                
                 >
                   Explore Courses
                 </a>
@@ -44,7 +37,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Second courses = {courses} />
+      <Second/>
     </main>
   );
 };
