@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react";
 
 const Nav = () => {
   return (
     <div>
-              <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
+      <header className="px-4 lg:px-6 h-14 flex items-center">
+        <a href="#" className="flex items-center justify-center">
           <BookIcon className="size-6" />
           <span className="sr-only">Acme Education</span>
-        </Link>
+        </a>
         <div className="ml-auto flex items-center gap-4 sm:gap-6">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="rounded-full sm:hidden">
+              <Button
+                className="rounded-full sm:hidden"
+              >
                 <MenuIcon className="h-5 w-5" />
                 <span className="sr-only">Toggle Menu</span>
               </Button>
@@ -20,45 +22,60 @@ const Nav = () => {
               <nav className="grid gap-6 text-lg font-medium">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="link" className="flex items-center justify-between">
+                    <Button
+                      variant="link"
+                      className="flex items-center justify-between"
+                    >
                       Classes
                       <ChevronDownIcon className="h-4 w-4" />
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-48">
                     <DropdownMenuItem>
-                      <Link href="#" className="flex items-center justify-between" prefetch={false}>
+                      <a href="#" className="flex items-center justify-between">
                         Class 1
                         <ChevronRightIcon className="h-4 w-4" />
-                      </Link>
+                      </a>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="link" className="flex items-center justify-between">
+                    <Button
+                      variant="link"
+                      className="flex items-center justify-between"
+                    >
                       Subjects
                       <ChevronDownIcon className="h-4 w-4" />
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-48">
                     <DropdownMenuItem>
-                      <Link href="#" className="flex items-center justify-between" prefetch={false}>
+                      <a href="#" className="flex items-center justify-between">
                         Mathematics
                         <ChevronRightIcon className="h-4 w-4" />
-                      </Link>
+                      </a>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
-                <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                <a
+                  href="#"
+                  className="text-sm font-medium hover:underline underline-offset-4"
+                >
                   About
-                </Link>
-                <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                </a>
+                <a
+                  href="#"
+                  className="text-sm font-medium hover:underline underline-offset-4"
+                >
                   Blog
-                </Link>
-                <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                </a>
+                <a
+                  href="#"
+                  className="text-sm font-medium hover:underline underline-offset-4"
+                >
                   Contact
-                </Link>
+                </a>
               </nav>
             </SheetContent>
           </Sheet>
@@ -71,10 +88,10 @@ const Nav = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48">
                 <DropdownMenuItem>
-                  <Link href="#" className="flex items-center justify-between" prefetch={false}>
+                  <a href="#" className="flex items-center justify-between">
                     Class 1
                     <ChevronRightIcon className="h-4 w-4" />
-                  </Link>
+                  </a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -86,27 +103,36 @@ const Nav = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48">
                 <DropdownMenuItem>
-                  <Link href="#" className="flex items-center justify-between" prefetch={false}>
+                  <a href="#" className="flex items-center justify-between">
                     Mathematics
                     <ChevronRightIcon className="h-4 w-4" />
-                  </Link>
+                  </a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            <a
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               About
-            </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Blog
-            </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Contact
-            </Link>
+            </a>
           </nav>
         </div>
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
