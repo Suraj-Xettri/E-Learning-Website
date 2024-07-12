@@ -2,6 +2,10 @@ import React from "react";
 import {FaBars, FaBook } from "react-icons/fa";
 import Dropdown from "./Dropdown";
 const Nav = () => {
+
+  const subject = ["Maths" , "Science", "Social"]
+  const classNO= ["Class 1", "class 2"]
+
   return (
     <div className="">
       <header className="px-4 border-b border-black lg:p-[40px] h-14 flex justify-around w-screen items-center">
@@ -15,8 +19,8 @@ const Nav = () => {
           </button>
         
           <nav className="hidden sm:flex gap-4 sm:gap-6 items-center">
-          <Dropdown value = "Class"/>
-          <Dropdown value = "Subject"/>
+          <Dropdown value = "Class" options={classNO}/>
+          <Dropdown value = "Subject" options = {subject}/>
 
             <a
               href="#"
