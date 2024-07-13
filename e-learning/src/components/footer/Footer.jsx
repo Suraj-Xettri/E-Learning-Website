@@ -8,9 +8,9 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="relative bg-blueGray-200 pt-8 pb-6 border-t border-black">
+    <footer className="flex justify-center items-center relative pt-8 pb-6 border-t border-black">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap text-left lg:text-left">
+        <div className="flex flex-wrap text-center lg:text-center">
           <div className="w-full lg:w-6/12 px-4">
             <h4 className="text-3xl font-semibold text-blueGray-700">
               Let's keep in touch!
@@ -18,27 +18,27 @@ export const Footer = () => {
             <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
               Find us on any of these platforms, we respond within 1-2 days.
             </h5>
-            <div className="mt-6 lg:mb-0 mb-6">
+            <div className="mt-6 lg:mb-0 mb-6 flex justify-center items-center">
               <button
-                className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-black hover:text-white"
                 type="button"
               >
                 <FaTwitter />
               </button>
               <button
-                className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="bg-white flex text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-black hover:text-white"
                 type="button"
               >
                 <FaFacebookSquare />
               </button>
               <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="bg-white flex text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-black hover:text-white"
                 type="button"
               >
                 <FaDribbble />
               </button>
               <button
-                className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="bg-white flex text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-black hover:text-white"
                 type="button"
               >
                 <FaGithub />
@@ -46,7 +46,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
+            <div className="flex items-top mb-6 flex-wrap sm:flex-nowrap md:flex-nowrap">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
                 <span className="block font-bold uppercase text-black text-md mb-2">
                   Some Other Pages
