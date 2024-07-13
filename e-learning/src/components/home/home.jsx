@@ -26,7 +26,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="flex justify-center items-center rounded-xl bg-[#D5B990] h-[40vh] w-[60vw] md:h-[300px] md:w-[450] lg:w-[550px] lg:h-[400px]">
+            <div className="rounded-xl bg-[#D5B990] h-[35vh] w-[35vw] md:h-[300px] md:w-[450] lg:w-[550px] lg:h-[400px]">
               <img
                 src="/"
                 alt="Hero"
