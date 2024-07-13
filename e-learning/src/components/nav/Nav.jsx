@@ -4,11 +4,9 @@ import Dropdown from "./Dropdown";
 const Nav = () => {
 
   const subject = ["Maths" , "Science", "Social"]
-  const classNO= ["Class 1", "class 2"]
-
   return (
     <div className="relative">
-      <header className="px-4 bg-[#ECE3D4] fixed z-20 border-b border-black lg:p-[40px] h-14 flex justify-around w-screen items-center">
+      <header className="px-4 text-[#0056D2] bg-[#E9E9E9] fixed z-20 border-b border-[#CCCCCC] lg:p-[40px] h-14 flex justify-around w-screen items-center">
         <a href="#" className="flex gap-4 items-center justify-center">
           <FaBook className="text-2xl" />
           <span className="font-semibold text-2xl">Exam Preperation</span>
@@ -19,9 +17,13 @@ const Nav = () => {
           </button>
         
           <nav className="hidden sm:flex gap-4 sm:gap-5 pr-2 items-center">
-          <Dropdown value = "Class" options={classNO}/>
-          <Dropdown value = "Subject" options = {subject}/>
-
+          <Dropdown value = "Courses" options = {subject}/>
+            <a
+              href="#"
+              className="text-sm lg:text-sm font-medium hover:underline underline-offset-4"
+            >
+              Home
+            </a>
             <a
               href="#"
               className="text-sm lg:text-sm font-medium hover:underline underline-offset-4"
@@ -32,15 +34,10 @@ const Nav = () => {
               href="#"
               className="text-sm lg:text-sm font-medium hover:underline underline-offset-4"
             >
-              Blog
-            </a>
-            <a
-              href="#"
-              className="text-sm lg:text-sm font-medium hover:underline underline-offset-4"
-            >
-              Contact
+              Contact Us
             </a>
           </nav>
+          <button className="bg-[#0056D2] px-4 py-2 rounded-2xl text-white hover:bg-[#0041A8] transition duration-500">Sign up</button>
         </div>
       </header>
     </div>

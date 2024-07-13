@@ -20,25 +20,25 @@ export const Footer = () => {
             </h5>
             <div className="mt-6 lg:mb-0 mb-6 flex justify-center items-center">
               <button
-                className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-black hover:text-white"
+                className="bg-[#27AE60] text-lightBlue-400 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-[#666666] hover:text-white"
                 type="button"
               >
                 <FaTwitter />
               </button>
               <button
-                className="bg-white flex text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-black hover:text-white"
+                className="bg-[#27AE60] flex text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-[#666666] hover:text-white"
                 type="button"
               >
                 <FaFacebookSquare />
               </button>
               <button
-                className="bg-white flex text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-black hover:text-white"
+                className="bg-[#27AE60] text-black flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-[#666666] hover:text-white"
                 type="button"
               >
                 <FaDribbble />
               </button>
               <button
-                className="bg-white flex text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-black hover:text-white"
+                className="bg-[#27AE60] flex text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition duration-500 hover:bg-[#666666] hover:text-white"
                 type="button"
               >
                 <FaGithub />
