@@ -3,16 +3,14 @@ import "./card.css";
 import { FcLikePlaceholder } from "react-icons/fc";
 const Card = ({ title, description }) => {
   return (
-    <div className="post-card">
-      <div className="avatar"></div>
+    <div className="post-card gap-3">
       <a href="#" class="title">
-        7 Tools for Faster Development in React
+        Padaune course ko name halne thau
       </a>
-      <span className="datetime">3 min to read</span>
       <div className="image-preview"></div>
       <div className="comment-like">
-        <span>
-          <FcLikePlaceholder />
+        <span className="text-black flex">
+          <FcLikePlaceholder className="text-2xl"/>
           10
         </span>
       </div>

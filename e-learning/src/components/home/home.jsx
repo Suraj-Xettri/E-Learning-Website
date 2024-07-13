@@ -26,7 +26,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="rounded-xl bg-white border border-[#CCCCCC] h-[35vh] w-[35vw] md:h-[300px] md:w-[450] lg:w-[550px] lg:h-[400px]">
+            <div className="rounded-xl bg-white border border-[#CCCCCC] shadow-md shadow-[#BBBBBB] h-[35vh] w-[35vw] md:h-[300px] md:w-[450] lg:w-[550px] lg:h-[400px]">
               <img
                 src="/"
                 alt="Hero"
