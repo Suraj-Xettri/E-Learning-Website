@@ -48,29 +48,29 @@ export const Footer = () => {
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex items-top mb-6 flex-wrap sm:flex-nowrap md:flex-nowrap">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block font-bold uppercase text-black text-md mb-2">
-                  Some Other Pages
+                <span className="block font-bold uppercase text-black text-start text-md mb-2">
+                   Content Pages
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled text-start">
                   <li>
                     <a
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-500 hover:text-gray-800 block pb-2 text-sm"
                       href="#"
                     >
-                      About Us
+                       Blog
                     </a>
                   </li>
                   <li>
                     <a
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-500 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="#"
                     >
-                      Blog
+                       Classes
                     </a>
                   </li>
                   <li>
                     <a
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-500 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="#"
                     >
                       Contact US
@@ -79,22 +79,22 @@ export const Footer = () => {
 
                   <li>
                     <a
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-500 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="#"
                     >
-                     Classes
+                     About Us
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="w-full lg:w-4/12 px-4">
-                <span className="block uppercase text-blueGray-500 text-md font-bold mb-2">
+                <span className="block uppercase text-start text-blueGray-500 text-md font-bold mb-2">
                   Legal
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled text-start">
                   <li>
                     <a
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-500 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="#"
                     >
                       Privacy Policy
@@ -102,7 +102,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-500 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="#"
                     >
                       Terms &amp; Conditions
@@ -110,7 +110,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-500 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="#"
                     >
                       Cookie Policy
@@ -133,7 +133,7 @@ export const Footer = () => {
                 {" "}
                 Exam Prep By
               </a>
-              <a href="#" className="text-blueGray-500 hover:text-blueGray-800">
+              <a href="#" className="text-blueGray-500 hover:text-gray-800">
                 Creative SRaj
               </a>
               .
