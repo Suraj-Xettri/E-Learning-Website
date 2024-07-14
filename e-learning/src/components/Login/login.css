@@ -9,8 +9,8 @@
   padding-left: 30px;
 }
 
-.title::before,
-.title::after {
+.titles::before,
+.titles::after {
   position: absolute;
   content: "";
   height: 16px;
@@ -20,23 +20,16 @@
   background-color: rgb(31, 82, 234);
 }
 
-.title::before {
+.titles::before {
   width: 18px;
   height: 18px;
   background-color: royalblue;
 }
 
-.title::after {
+.titles::after {
   width: 18px;
   height: 18px;
   animation: pulse 1s linear infinite;
-}
-@media (min-width: 360px) {
-  .form {
-    max-width: 200px;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 
 .message,
