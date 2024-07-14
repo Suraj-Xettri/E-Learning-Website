@@ -36,10 +36,10 @@ const Log = () => {
         isFlipped ? (
           <Register handleToggle = {handleToggle}/>
         ) : (
-          <div className="flex-1 flex flex-col gap-5 items-center">
+          <div className="flex-1 flex flex-col gap-5 items-center justify-center">
             <div className="flex-1">
-              <form className="form">
-                <p className="title">Welcome Back </p>
+              <form className="flex flex-col form gap-3 relative bg-transparent p-5 rounded-2xl border border-gray-400 min-w-[300px] sm:min-w-[360px]">
+                <p className="titles">Welcome Back </p>
                 <p className="message">
                  Log in to get full access to app.
                 </p>
