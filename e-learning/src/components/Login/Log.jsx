@@ -3,14 +3,14 @@ import Register from "./Register"
 
 const Log = () => {
  
-  const [isFlipped, setIsFlipped] = useState(true);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const handleToggle = () => {
     setIsFlipped(!isFlipped);
   };
 
   return (
-    <div className="flex h-screen w-screen flex-col pt-[140px] justify-center items-center  bg-transparent">
+    <div className="flex h-screen w-screen flex-col pt-[120px] justify-center items-center  bg-transparent">
       <div className="relative">
         <label className="flex flex-col items-center">
           <input
@@ -34,7 +34,7 @@ const Log = () => {
 
       {
         isFlipped ? (
-          <Register/>
+          <Register handleToggle = {handleToggle}/>
         ) : (
           <div className="flex-1 flex flex-col gap-5 items-center">
             <div className="flex-1">
@@ -64,6 +64,8 @@ const Log = () => {
                 </button>
 
                 <p className="text-center">Forgot Password ?</p>
+
+                <p className='text-center'>Don't Have an account?<button onClick={handleToggle} className='text-blue-700 font-semibold'>Register</button></p>
               </form>
              
             </div>

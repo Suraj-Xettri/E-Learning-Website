@@ -17,10 +17,8 @@ function App() {
           <Route path="/Log" element={<Log />} />
           <Route path="*" element={<h1> Page Not Found</h1>} />
         </Routes>
+        <Footer />
       </Router>
-     
-      
-      <Footer />
     </>
   );
 }
