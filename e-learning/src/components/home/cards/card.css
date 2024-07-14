@@ -11,12 +11,6 @@
     box-shadow: 0 4px 8px #BBBBBB;
   }
   
-  .avatar {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    background-color: #e3d7c4;
-  }
   
   .title {
     font-size: 20px;
@@ -25,18 +19,13 @@
     margin-top: 10px;
     color: black;
     text-decoration: none;
-    transition: all .35s ease-in;
+    transition: all 1s;
   }
   
   .title:hover {
-    text-decoration: underline #5f4f37;
+    text-decoration: underline #8a6d40;
   }
   
-  .datetime {
-    font-size: 12px;
-    color: rgb(25, 25, 26);
-    margin: 10px 0;
-  }
   
   .image-preview {
     flex: 1;
@@ -54,11 +43,4 @@
     padding: 2px 0;
   }
   
-  .comment-like span:hover {
-    background-color: rgba(137, 43, 226, 0.096);
-  }
   
-  .comment-like span svg {
-    fill: rgb(255, 255, 255);
-    margin-right: 2px;
-  }

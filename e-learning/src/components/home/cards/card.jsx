@@ -7,10 +7,12 @@ const Card = ({ title, description }) => {
       <a href="#" class="title">
         Padaune course ko name halne thau
       </a>
-      <div className="image-preview"></div>
+      <div className="image-preview">
+        
+      </div>
       <div className="comment-like">
         <span className="text-black flex">
-          <FcLikePlaceholder className="text-2xl"/>
+          <FcLikePlaceholder className="text-2xl cursor-pointer"/>
           10
         </span>
       </div>
