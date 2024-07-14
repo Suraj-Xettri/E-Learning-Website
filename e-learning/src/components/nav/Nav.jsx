@@ -1,7 +1,7 @@
 import React from "react";
 import {FaBars, FaBook } from "react-icons/fa";
 import Dropdown from "./Dropdown";
-import { Link , NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Nav = () => {
 
   const subject = ["Maths" , "Science", "Social"]
@@ -38,7 +38,10 @@ const Nav = () => {
               Contact Us
             </NavLink>
           </nav>
-          <button className="bg-[#0056D2] px-4 py-2 rounded-2xl text-white hover:bg-[#0041A8] transition duration-500">Sign up</button>
+          <button className="bg-[#0056D2] px-4 py-2 rounded-2xl text-white hover:bg-[#0041A8] transition duration-500">
+            <NavLink to="/Log">
+              Sign up
+              </NavLink> </button>
         </div>
       </header>
     </div>
