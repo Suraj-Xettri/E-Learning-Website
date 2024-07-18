@@ -17,8 +17,8 @@ const LearningJourney = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-10">
-        <div className="flex flex-col gap-10 items-center justify-center ">
+      <div className="grid grid-cols-1 gap-7 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mb-10">
+        <div className="flex flex-col lg:flex-col md:flex-row sm-flex-row  gap-10 items-center justify-center ">
           <div className="text-center w-2/4">
             <FaCube className="mx-auto text-3xl mb-2" />
             <h3 className="text-xl font-bold mb-2">Step 1:</h3>
@@ -44,7 +44,7 @@ const LearningJourney = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 items-center justify-center">
+        <div className="flex flex-col lg:flex-col md:flex-row sm-flex-row gap-10 items-center justify-center">
           <div className="text-center w-2/4">
             <FaCube className="mx-auto text-3xl mb-2" />
             <h3 className="text-xl font-bold mb-2">Step 3:</h3>
