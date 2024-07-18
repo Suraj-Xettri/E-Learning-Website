@@ -1,7 +1,8 @@
 import React from "react";
 
 import Second from "./Second";
-
+import CourseOverview from "./CourseOverview";
+import LearningJourney from "./LearningJourney";
 const Home = () => {
   return (
     <main className="w-screen box-border relative z-10 flex-col justify-center items-center">
@@ -48,6 +49,8 @@ const Home = () => {
         </div>
       </section>
 
+      <CourseOverview />
+      <LearningJourney/>
       <Second />
     </main>
   );
