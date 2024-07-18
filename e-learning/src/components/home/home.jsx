@@ -33,14 +33,14 @@ const Home = () => {
                 <div className="mt-10 flex gap-4">
                   <a
                     href="#"
-                    className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800"
+                    className="inline-flex h-[6vh] whitespace-nowrap w-[22vw] items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800"
                   >
                     Sign Up
                   </a>
 
                   <a
                     href="#"
-                    className="inline-flex h-9 items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-black shadow transition-colors hover:bg-gray-100"
+                    className="inline-flex h-[6vh] whitespace-nowrap w-[22vw] items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-black shadow transition-colors hover:bg-gray-100"
                   >
                     Log In
                   </a>
