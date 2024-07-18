@@ -3,9 +3,9 @@ import { FaCube } from 'react-icons/fa';
 
 const CourseOverview = () => {
   return (
-    <div className="container flex flex-col gap-5 mt-24 p-16">
+    <div className="container flex flex-col gap-5 lg:mt-24 p-16">
         <p className='mb-3'>Empower</p>
-      <div className="flex flex-col w-[50vw]">
+      <div className="flex flex-col lg:w-[50vw]">
         <h1 className="text-5xl font-bold mb-4">Unlock Your Potential with Expert Online Courses</h1>
         <p className="text-lg mb-8 mt-4">
           Our courses offer the expertise, flexibility, and comprehensive curriculum you need to succeed.
@@ -13,7 +13,7 @@ const CourseOverview = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-around mb-10">
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 justify-around mb-10">
         <div className="flex flex-col gap-2">
           <FaCube className="text-3xl mb-2" />
           <h3 className="text-xl font-bold mb-2">Expert Instructors</h3>
