@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCube } from 'react-icons/fa';
-
+import { GrUserExpert } from "react-icons/gr";
 const CourseOverview = () => {
   return (
     <div className="container flex flex-col gap-5 lg:mt-24 p-16">
@@ -15,7 +15,7 @@ const CourseOverview = () => {
       
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 justify-around mb-10">
         <div className="flex flex-col gap-2">
-          <FaCube className="text-3xl mb-2" />
+          <GrUserExpert className="text-3xl mb-2" />
           <h3 className="text-xl font-bold mb-2">Expert Instructors</h3>
           <p>Learn from industry-leading experts in their respective fields.</p>
         </div>

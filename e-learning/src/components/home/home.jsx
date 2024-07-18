@@ -24,7 +24,7 @@ const Home = () => {
                 Unlock Your Potential with Our Courses
               </h1>
               <div className="flex-1">
-                <p className="mx-auto text-[#666666] max-w-[700px] text-muted-foreground md:text-xl">
+                <p className="mx-auto text-[#666666] max-w-[700px] md:text-xl">
                   Explore a wide range of educational courses and take the first
                   step towards achieving your goals. With expert instructors and
                   flexible learning options, you can enhance your skills and

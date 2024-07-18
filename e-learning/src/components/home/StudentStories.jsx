@@ -40,7 +40,7 @@ const StudentStories = () => {
   return (
     <div className="bg-white rounded-lg p-16">
       <div className="mb-10 flex flex-col gap-1">
-        <h2 className="text-4xl font-bold">Student Stories</h2>
+        <h2 className="text-4xl font-bold">Student Feedback's</h2>
         <p>Hear what our students have to say about their experiences</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  space-x-8">

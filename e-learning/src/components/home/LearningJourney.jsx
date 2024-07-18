@@ -1,6 +1,8 @@
 import React from "react";
-import { FaCube } from "react-icons/fa";
-
+import { PiStudentBold } from "react-icons/pi";
+import { IoIosCreate } from "react-icons/io";
+import { CgBrowse } from "react-icons/cg";
+import { GiMaterialsScience } from "react-icons/gi";
 const LearningJourney = () => {
   return (
     <div className="container flex flex-col gap-6 p-16">
@@ -20,7 +22,7 @@ const LearningJourney = () => {
       <div className="grid grid-cols-1 gap-7 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mb-10">
         <div className="flex flex-col lg:flex-col md:flex-row sm-flex-row  gap-10 items-center justify-center ">
           <div className="text-center w-2/4">
-            <FaCube className="mx-auto text-3xl mb-2" />
+            <CgBrowse className="mx-auto text-3xl mb-2" />
             <h3 className="text-xl font-bold mb-2">Step 1:</h3>
             <p>
               Browse our course catalog and choose the topic that interests you.
@@ -28,7 +30,7 @@ const LearningJourney = () => {
           </div>
 
           <div className="text-center w-2/4">
-            <FaCube className="mx-auto text-3xl mb-2" />
+            <IoIosCreate className="mx-auto text-3xl mb-2" />
             <h3 className="text-xl font-bold mb-2">Step 2:</h3>
             <p>Create an account and complete the easy registration process.</p>
           </div>
@@ -37,7 +39,7 @@ const LearningJourney = () => {
         <div className="flex items-center justify-center w-full h-full">
           <div className="bg-gray-200  flex items-center justify-center w-full h-full">
             <img
-              src="path-to-your-image"
+              src="./learningjourney.jpg"
               alt="Learning Journey"
               className="h-full w-full object-cover"
             />
@@ -46,7 +48,7 @@ const LearningJourney = () => {
 
         <div className="flex flex-col lg:flex-col md:flex-row sm-flex-row gap-10 items-center justify-center">
           <div className="text-center w-2/4">
-            <FaCube className="mx-auto text-3xl mb-2" />
+            <GiMaterialsScience className="mx-auto text-3xl mb-2" />
             <h3 className="text-xl font-bold mb-2">Step 3:</h3>
             <p>
               Access your chosen course materials and start learning at your own
@@ -55,7 +57,7 @@ const LearningJourney = () => {
           </div>
 
           <div className="text-center w-2/4">
-            <FaCube className="mx-auto text-3xl mb-2" />
+            <PiStudentBold className="mx-auto text-3xl mb-2" />
             <h3 className="text-xl font-bold mb-2">Step 4:</h3>
             <p>
               Engage with fellow learners and instructors through interactive
