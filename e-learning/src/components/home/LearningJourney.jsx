@@ -5,11 +5,11 @@ import { CgBrowse } from "react-icons/cg";
 import { GiMaterialsScience } from "react-icons/gi";
 const LearningJourney = () => {
   return (
-    <div className="container flex flex-col gap-6 p-16">
+    <div className="container flex flex-col justify-center items-center gap-6 p-5 sm:p-16">
       <p className="text-center">Discover.</p>
       <div className="flex justify-center items-center">
-        <div className="text-center mb-10 w-[60vw]">
-          <h1 className="text-4xl font-bold mb-4">
+        <div className="text-center sm:text-center mb-10 sm:w-[60vw]">
+          <h1 className="text-2xl sm:text-4xl font-bold mb-4">
             Start Your Learning Journey Today
           </h1>
           <p className="text-lg">

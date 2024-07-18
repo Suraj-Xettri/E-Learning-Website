@@ -3,7 +3,7 @@ import { FaCube } from 'react-icons/fa';
 import { GrUserExpert } from "react-icons/gr";
 const CourseOverview = () => {
   return (
-    <div className="container flex flex-col gap-5 lg:mt-24 p-16">
+    <div className="container flex flex-col gap-5 lg:mt-24 p-5 sm:p-16">
         <p className='mb-3'>Empower</p>
       <div className="flex flex-col lg:w-[50vw]">
         <h1 className="text-5xl font-bold mb-4">Unlock Your Potential with Expert Online Courses</h1>

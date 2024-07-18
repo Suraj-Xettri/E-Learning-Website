@@ -3,7 +3,7 @@ import CardContainer from "./cards/CardContainer"
 
 const Second = ({ courses }) => {
   return (
-    <section className="py-12 md:py-24 lg:py-32">
+    <section className="p-5 sm:p-16 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6 flex justify-center items-center">
         <div className="flex flex-col items-center gap-16 justify-center space-y-4 text-center">
           <div className="space-y-2">

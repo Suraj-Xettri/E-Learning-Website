@@ -10,7 +10,7 @@ const Home = () => {
     <main className="w-screen box-border relative z-10 flex-col justify-center items-center">
       <section className="pt-14 ">
         <div className="container space-y-10 xl:space-y-16">
-          <div className="flex flex-col gap-4 justify-items-center">
+          <div className="flex flex-col gap-4 justify-center">
             <div className="rounded-xl bg-white border border-[#CCCCCC] h-[85vh] w-screen">
               <img
                 src="./cover.jpg"

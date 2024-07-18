@@ -38,12 +38,12 @@ const StarRating = ({ rating }) => {
 
 const StudentStories = () => {
   return (
-    <div className="bg-white rounded-lg p-16">
+    <div className="bg-white rounded-lg p-5 sm:p-16">
       <div className="mb-10 flex flex-col gap-1">
         <h2 className="text-4xl font-bold">Student Feedback's</h2>
         <p>Hear what our students have to say about their experiences</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  space-x-8">
+      <div className="grid grid-cols-1 gap-10 min-w-[280px] md:grid-cols-2 justify-items-center lg:grid-cols-3">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="bg-zinc-100 p-6 flex flex-col gap-2 rounded-lg">
             <div className='flex items-start text-black'>
