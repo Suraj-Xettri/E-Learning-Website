@@ -1,47 +1,67 @@
-import React from 'react';
-import { FaCube } from 'react-icons/fa';
+import React from "react";
+import { FaCube } from "react-icons/fa";
 
 const LearningJourney = () => {
   return (
-    <div className="container p-16">
-      <p className='text-center mb-10'>Discover.</p>
-      <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold mb-4">Start Your Learning Journey Today</h1>
-        <p className="text-lg">
-          Join our online courses and gain valuable knowledge from expert teachers. Sign up now and
-          unlock a world of learning opportunities.
-        </p>
+    <div className="container flex flex-col gap-6 p-16">
+      <p className="text-center">Discover.</p>
+      <div className="flex justify-center items-center">
+        <div className="text-center mb-10 w-[60vw]">
+          <h1 className="text-4xl font-bold mb-4">
+            Start Your Learning Journey Today
+          </h1>
+          <p className="text-lg">
+            Join our online courses and gain valuable knowledge from expert
+            teachers. Sign up now and unlock a world of learning opportunities.
+          </p>
+        </div>
       </div>
 
-      <div className="flex justify-between items-start mb-10">
-        <div className="text-center w-1/4">
-          <FaCube className="mx-auto text-3xl mb-2" />
-          <h3 className="text-xl font-bold mb-2">Step 1:</h3>
-          <p>Browse our course catalog and choose the topic that interests you.</p>
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-10">
+        <div className="flex flex-col gap-10 items-center justify-center ">
+          <div className="text-center w-2/4">
+            <FaCube className="mx-auto text-3xl mb-2" />
+            <h3 className="text-xl font-bold mb-2">Step 1:</h3>
+            <p>
+              Browse our course catalog and choose the topic that interests you.
+            </p>
+          </div>
 
-        <div className="text-center w-1/4">
-          <FaCube className="mx-auto text-3xl mb-2" />
-          <h3 className="text-xl font-bold mb-2">Step 2:</h3>
-          <p>Create an account and complete the easy registration process.</p>
-        </div>
-
-        <div className="flex items-center justify-center w-1/4">
-          <div className="bg-gray-200 h-64 w-64 flex items-center justify-center">
-            <img src="path-to-your-image" alt="Learning Journey" className="h-full w-full object-cover" />
+          <div className="text-center w-2/4">
+            <FaCube className="mx-auto text-3xl mb-2" />
+            <h3 className="text-xl font-bold mb-2">Step 2:</h3>
+            <p>Create an account and complete the easy registration process.</p>
           </div>
         </div>
 
-        <div className="text-center w-1/4">
-          <FaCube className="mx-auto text-3xl mb-2" />
-          <h3 className="text-xl font-bold mb-2">Step 3:</h3>
-          <p>Access your chosen course materials and start learning at your own pace.</p>
+        <div className="flex items-center justify-center w-full h-full">
+          <div className="bg-gray-200  flex items-center justify-center w-full h-full">
+            <img
+              src="path-to-your-image"
+              alt="Learning Journey"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
 
-        <div className="text-center w-1/4">
-          <FaCube className="mx-auto text-3xl mb-2" />
-          <h3 className="text-xl font-bold mb-2">Step 4:</h3>
-          <p>Engage with fellow learners and instructors through interactive discussions.</p>
+        <div className="flex flex-col gap-10 items-center justify-center">
+          <div className="text-center w-2/4">
+            <FaCube className="mx-auto text-3xl mb-2" />
+            <h3 className="text-xl font-bold mb-2">Step 3:</h3>
+            <p>
+              Access your chosen course materials and start learning at your own
+              pace.
+            </p>
+          </div>
+
+          <div className="text-center w-2/4">
+            <FaCube className="mx-auto text-3xl mb-2" />
+            <h3 className="text-xl font-bold mb-2">Step 4:</h3>
+            <p>
+              Engage with fellow learners and instructors through interactive
+              discussions.
+            </p>
+          </div>
         </div>
       </div>
 
