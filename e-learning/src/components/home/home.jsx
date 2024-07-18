@@ -4,40 +4,51 @@ import Second from "./Second";
 
 const Home = () => {
   return (
-    <main className="w-screen box-border relative z-10 flex flex-col justify-center items-center">
-      <section className=" pt-[100px] md:pt-24 lg:pt-[200px]">
-        <div className="container px-4 md:px-6 space-y-10 xl:space-y-16">
-          <div className="ml-6 grid gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16 justify-items-center">
-            <div className="flex flex-col gap-6">
-              <h1 className="lg:leading-tighter text-[#333333] text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
-                Unlock Your Potential with Our Courses
-              </h1>
-              <p className="mx-auto text-[#666666] max-w-[700px] text-muted-foreground md:text-xl">
-                Explore a wide range of educational courses and take the first
-                step towards achieving your goals.
-              </p>
-              <div className="pt-6">
-                <a
-                  href="#"
-                  className="inline-flex h-9 items-center justify-center rounded-md bg-[#F39C12] px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-[#E67E22]"
-                
-                >
-                  Explore Courses
-                </a>
-              </div>
-            </div>
-            <div className="rounded-xl bg-white border border-[#CCCCCC] shadow-md shadow-[#BBBBBB] h-[35vh] w-[35vw] md:h-[300px] md:w-[450] lg:w-[550px] lg:h-[400px]">
+    <main className="w-screen box-border relative z-10 flex-col justify-center items-center">
+      <section className="pt-14 ">
+        <div className="container space-y-10 xl:space-y-16">
+          <div className="flex flex-col gap-4 justify-items-center">
+            <div className="rounded-xl bg-white border border-[#CCCCCC] h-[85vh] w-screen">
               <img
-                src="/"
+                src="./cover.jpg"
                 alt="Hero"
                 className="mx-auto aspect-[4/3] overflow-hidden w-full h-full rounded-xl object-cover"
               />
+            </div>
+
+            <div className="flex flex-wrap gap-6 p-10">
+              <h1 className="flex-1 lg:leading-tighter text-[#333333] text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
+                Unlock Your Potential with Our Courses
+              </h1>
+              <div className="flex-1">
+                <p className="mx-auto text-[#666666] max-w-[700px] text-muted-foreground md:text-xl">
+                  Explore a wide range of educational courses and take the first
+                  step towards achieving your goals. With expert instructors and
+                  flexible learning options, you can enhance your skills and
+                  advance your career at your own pace.
+                </p>
+                <div className="mt-10 flex gap-4">
+                  <a
+                    href="#"
+                    className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800"
+                  >
+                    Sign Up
+                  </a>
+
+                  <a
+                    href="#"
+                    className="inline-flex h-9 items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-black shadow transition-colors hover:bg-gray-100"
+                  >
+                    Log In
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <Second/>
+      <Second />
     </main>
   );
 };
