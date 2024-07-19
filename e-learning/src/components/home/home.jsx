@@ -1,7 +1,7 @@
 import React from "react";
 
 import StudentStories from "./StudentStories";
-
+import Discover from "./Discover";
 import Second from "./Second";
 import CourseOverview from "./CourseOverview";
 import LearningJourney from "./LearningJourney";
@@ -54,6 +54,7 @@ const Home = () => {
       <CourseOverview />
       <LearningJourney/>
       <StudentStories/>
+      <Discover/>
       <Second />
     </main>
   );
