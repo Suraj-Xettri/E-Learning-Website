@@ -1,5 +1,5 @@
 import React from "react";
-
+import Subscribe from "./Subscribe";
 import StudentStories from "./StudentStories";
 import Discover from "./Discover";
 import Second from "./Second";
@@ -56,6 +56,7 @@ const Home = () => {
       <StudentStories/>
       <Discover/>
       <Second />
+      <Subscribe/>
     </main>
   );
 };
